@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.nav{
+    
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    padding: 0px 24px;
+    gap: 24px;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    background: none;
+    gap: 8px;
+    padding: 0px;
+    border-style: none;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background-image: url('images/logo_citycare.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+} 
+
+.citycare{
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    color: rgb(30, 58, 95);
+}
+
+nav{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbuttons{
+    display: flex;
+    align-items: center;
+    background: none;
+    padding: 0px;
+    border-style: none;
+    font-size: 14px;
+    color:rgb(78, 75, 75);
+}
+
+
