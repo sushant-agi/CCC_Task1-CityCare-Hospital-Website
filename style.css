@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
@@ -62,7 +63,162 @@ nav{
     padding: 0px;
     border-style: none;
     font-size: 14px;
-    color:rgb(78, 75, 75);
+    color:#374151;
+    cursor: pointer;
 }
 
+.appointment_calendar{
+    height: 18px;
+    width: 18px;
+    background-image: url('images/calendar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+#appointment_button{
+    background-color:rgb(15, 118, 110);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 7px;
+}
+
+.phone_logo{
+    height: 18px;
+    width: 18px;
+    background-image: url('images/phone_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.emergency_button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background-color: rgb(254, 242, 242);
+    border: 1px solid rgb(231, 154, 154);
+    border-radius: 8px;
+}
+
+.emergency{
+    font-size: 10px;
+    color: rgb(220, 38, 38);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.emergency_contact{
+    font-size: 15px;
+    line-height: 1.1;
+    color: rgb(121, 8, 8);
+    font-weight: 700;
+}
+
+.red_banner{
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: rgb(220, 38, 38);
+    justify-content: space-between;
+    color: white;
+}
+
+.emergency_247{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.emergency_247_content{
+    color:rgb(254, 202, 202);
+    font-size: 14px;
+}
+
+.emergency_button_main{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    background-color: white;
+    font-weight: 700;
+    color: rgb(220, 38, 38);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.hero{
+    padding: 80px 26px;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    background-color:#e1e2e6;
+    gap: 50px;
+}
+
+.trusted_healthcare{
+    color:rgb(15, 118, 110);
+    background-color: rgb(204, 251, 241);
+    border-radius: 100px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.doctor_image{
+    background-image: url('images/care_point.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.health_priority{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(30, 58, 95);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero_description{
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 40px;
+    line-height: 1.75;
+    max-width: 400px;
+}
+
+.hero_buttons_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero_buttons{
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#appointment_button_main{
+    background-color:rgb(15, 118, 110);
+    color: white;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#explore_dept{
+    background-color: transparent;
+    color: rgb(30, 60, 100);
+    border: 2px solid rgb(157, 172, 187);
+    
+}
