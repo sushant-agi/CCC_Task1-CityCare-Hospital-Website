@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+                <div class="nav">
+                    <button class="logo-area">
+                        <div class="logo">
+                        </div>
+                        <div class="citycare">
+                            CityCare
+                        </div>
+                    </button>
+                    <nav>
+                        <a href="index.html" class="navbuttons">
+                            Home
+                        </a>
+                        <a href="departments.html" class="navbuttons">
+                            Departments
+                        </a>
+                        <a href="appointment.html" class="navbuttons" id="appointment_button">
+                            <div class="appointment_calendar">
+                            </div>
+                            Book Appointments
+                        </a>
+                        
+                    </nav>
+                    <div class="emergency_button">
+                        <div class="phone_logo"></div>
+                        <div>
+                            <div class="emergency">
+                                EMERGENCY
+                            </div>
+                            <div class="emergency_contact">
+                                112
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="book_appointment">
+                <div class="book_appointment_div">
+                    <h2>
+                        Book an Appointment
+                    </h2>
+                    <p>
+                        Schedule a visit with our healthcare team. We will confirm your booking within 24 hours.
+                    </p>
+                </div>
+            </section>
+            <section class="appointment_form">
+                <div class="appointment_grid">
+                    
+                    <div class="appointment_item">
+                        <h2>
+                            Appointment Information
+                        </h2>
+                        <p>
+                            Fill in the form to request an appointment. Our team will review your request and contact you to confirm a time that works for you.
+                        </p>
+                        <div  class="appointment_item_left">
+                            <div class="phone_logo"></div>
+                            <div class="emergency_box">
+                                
+                                <div class="item_left_emergency_head">
+                                    Medical Emergency?
+                                </div>
+                                <div class="item_left_emergency_content">
+                                    Do not use this form. Call <strong>112</strong> immediately for emergency assistance.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="appointment_item_left">
+                            <div class="phone_logo"></div>
+                            <div>
+                                <div class="item_left_head">
+                                    General Enquiries
+                                </div>
+                                <div class="item_left_content">
+                                    +(91) 100-200-300
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="appointment_item_left">
+                            <div class="mail_logo"></div>
+                            <div>
+                                <div class="item_left_head">
+                                    Email
+                                </div>
+                                <div class="item_left_content">
+                                    appointments@CityCare.med
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="appointment_item_left">
+                            <div class="add_logo"></div>
+                            <div>
+                                <div class="item_left_head">
+                                    Address
+                                </div>
+                                <div class="item_left_content">
+                                    XYZ road, Ghaziabad
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="appointment_item" id="form">
+                        <h3>Your Details</h3>
+                        <form>
+                            <div>
+                                <label for="name">Full Name <span>*</span></label>
+                                <input class="form_box" required type="text" id="name" placeholder="e.g. abcd">
+                            </div>
+                            <div class="same_line_inputs">
+                                <div>
+                                    <label for="mail">Email-Address <span>*</span></label>
+                                    <input required class="form_box" type="text" id="mail" placeholder="e.g. abc12@gmail.com">
+                                </div>
+                                <div>
+                                    <label for="mobile">Mobile Number <span>*</span></label>
+                                    <input required class="form_box" type="text" id="mobile" placeholder="e.g. 99XXXXXXXX">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="Department">Department <span>*</span></label>
+                                <select required class="form_box" id="Department">
+                                    <option value>Select a Department</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Paediatrics">Paediatrics</option>
+                                    <option value="Orthopaedics">Orthopaedics</option>
+                                    <option value="Dentistry">Dentistry</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="General Medicine">General Medicine</option>
+                                </select>
+                            </div>
+                            <div class="same_line_inputs">
+                                <div>
+                                    <label for="Date"> Preferred Date <span>*</span></label>
+                                    <input required class="form_box" type="date" id="Date" >
+                                </div>
+                                <div>
+                                    <label for="Time"> Preferred Time </label>
+                                    <select class="form_box" id="Time">
+                                        <option value>Select a Department</option>
+                                        <option value="Morning">Morning(8am-12pm)</option>
+                                        <option value="Afternoon">Afternoon(12pm-4pm)</option>
+                                        <option value="Evening">Evening(4pm-8pm)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                   <label for="additional"> Any Additional Information </label>
+                                   <textarea class="form_box" id="additional" rows="4" placeholder="symptoms or reason for visit"></textarea>
+                                </div>
+                            </div>
+                            <div id="appointment_button_main" style="text-align: center">Book My Appointment</div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <div class="footer_container">
+                    <div class="footer_item">
+                        <div class="logo-area">
+                            <div class="logo">
+                            </div>
+                            <div class="citycare">
+                                CityCare
+                            </div>
+                        </div>
+                        <div class="footer_content">
+                        CityCare Medical Center is committed to providing compassionate, evidence-based healthcare to every patient we serve.
+                        </div>
+                        <div class="emergency_button_main">
+                            <div class="phone_logo"></div>
+                                24/7 Emergency: 112
+                        </div>
+                    </div>
+                    
+                    <div class="footer_item">
+                        <h4>
+                            DEPARTMENTS
+                        </h4>
+                        <a href="#">
+                            Home
+                        </a>
+                        <a href="#">
+                            Departments
+                        </a>
+                        <a href="#">
+                            Book Appointments
+                        </a>
+                    </div>
+                    <div class="footer_item">
+                        <h4>
+                            QUICK LINKS
+                        </h4>
+                        <a href="#">
+                            Cardiology
+                        </a>
+                        <a href="#">
+                            Pediatrics
+                        </a>
+                        <a href="#">
+                            Orthoipedics
+                        </a>
+                        <a href="#">
+                            Neurology
+                        </a>
+                        <a href="#">
+                            Dentistry
+                        </a>
+                        <a href="#">
+                            General Medicine
+                        </a>
+
+                    </div>
+                    <div class="footer_item">
+                        <h4>
+                            CONTACT US
+                        </h4>
+                        <a href="#">
+                            45 Medical Drive, Healthville, HC 10023
+                        </a>
+                        <a href="#">
+                            +1 (555) 200-3400
+                        </a>
+                        <a href="#">
+                            info@carepoint.med
+                        </a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

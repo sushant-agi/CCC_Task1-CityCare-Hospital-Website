@@ -11,6 +11,7 @@ header{
     background-color: white;
     position: sticky;
     top: 0px;
+    box-shadow: 0px 4px 12px grey;
 }
 
 .nav{
@@ -40,7 +41,7 @@ header{
     background-image: url('images/logo_citycare.jpg');
     background-size: cover;
     background-position: center;
-    display: inline-block;
+    /* display: inline-block; */
 } 
 
 .citycare{
@@ -63,8 +64,18 @@ nav{
     padding: 0px;
     border-style: none;
     font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
     color:#374151;
     cursor: pointer;
+    transition: color .4s;
+}
+
+.navbuttons:hover{
+    color: rgb(7, 116, 97);
+}
+.navbuttons:active{
+    color: rgb(7, 116, 97);
 }
 
 .appointment_calendar{
@@ -76,13 +87,18 @@ nav{
 }
 
 #appointment_button{
-    background-color:rgb(15, 118, 110);
+    background-color:rgb(28, 151, 141);
     color: white;
     font-weight: 600;
     display: flex;
     align-items: center;
     padding: 8px 16px;
     border-radius: 7px;
+    transition: background-color .3s;
+}
+
+#appointment_button:hover{
+    background-color: rgb(3, 71, 60);
 }
 
 .phone_logo{
@@ -153,7 +169,7 @@ nav{
     padding: 80px 26px;
     display: grid;
     grid-template-columns: 50% 40%;
-    background-color:#e1e2e6;
+    background-color:#ffffff;
     gap: 50px;
 }
 
@@ -205,7 +221,9 @@ nav{
     margin-bottom: 25px;
     cursor: pointer;
 }
-
+.hero_buttons:hover {
+    box-shadow: 3px 4px 6px rgb(77, 74, 74);
+}
 #appointment_button_main{
     background-color:rgb(15, 118, 110);
     color: white;
@@ -221,4 +239,514 @@ nav{
     color: rgb(30, 60, 100);
     border: 2px solid rgb(157, 172, 187);
     
+}
+
+.services{
+    padding: 48px 24px;
+    background-color: rgb(23, 57, 88);
+    
+}
+
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgb(45, 74, 112);
+    background-color: rgb(157, 172, 187);;
+}
+
+.services_item{
+    padding: 32px 24px;
+    text-align: center;
+    background-color: rgb(23, 57, 88);
+}
+
+.services_item span{
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(140, 160, 180)
+}
+.services_item div{
+    font-weight: 800;
+    font-size: 36px;
+    color: rgb(80, 226, 214);
+    margin-bottom: 6px;
+}
+
+.whyus{
+    padding: 48px 24px;
+    background-color: #ffffff;
+    text-align: center;
+    
+}
+
+.whyus_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.whyus_item{
+    padding: 32px 24px;
+    text-align: center;
+    background-color: #e1e2e6;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgb(138, 135, 135);
+    transition: transform .2s;
+}
+
+.whyus_item:hover{
+    transform: translateY(-10px);
+}
+
+.whyus_image{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+#emergency{
+    background-image: url('images/247_emergency2.jpeg');
+}
+#modern_facilities{
+    background-image: url('images/modern_facilities.jpeg');
+}
+#experienced_doctors{
+    background-image: url('images/stethoscope.jpeg');
+}
+#patient_centered{
+    background-image: url('images/heart.jpeg');
+}
+
+.whyus_item span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    color:rgb(48, 73, 97);
+}
+.whyus_item div{
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(26, 47, 107);
+    margin-bottom: 10px;
+}
+
+.whyus_heading{
+    margin-bottom: 50px;
+}
+
+.whyus_heading h2{
+    font-weight: 800;
+    font-size: 32px;
+    color: rgb(26, 47, 107);
+    margin-bottom: 12px;
+}
+
+.whyus_heading p{
+    color:rgb(137, 149, 161);
+}
+
+.download{
+    /* background-color: #4E9BC4; */
+    background-color:rgb(23, 57, 88);
+    padding: 30px 40px;
+}
+
+.download_flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.qr{
+    height: 100px;
+    width:100px;
+    background-image: url('images/qr.jpeg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 4px 3px 8px grey;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+
+.download_content{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.play_and_app{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.playicon{
+    width: 150px;
+    height: 50px;
+    background-image: url('images/google_play.jpeg');
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 4px 3px 8px grey;
+    transition: translate .2s;
+
+}
+.playicon:hover{
+    transform: translateY(-5px);
+}
+.appicon{
+    width: 150px;
+    height: 50px;
+    background-image: url('images/app_store.jpeg');
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 4px 3px 8px grey;
+    transition: transform .2s;
+}
+.appicon:hover{
+    transform: translateY(-5px);
+}
+
+.cta{
+    background-color: rgb(15, 118, 110);
+    padding: 72px 24px;
+    font-weight: 700;
+}
+.cta_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta_heading{
+    font-size: 32px;
+    color: white;
+    
+}
+
+.cta_content{
+    color: rgb(133, 236, 214);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cta_button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-color: white;
+    color:rgb(15, 118, 110);
+}
+
+.footer{
+    padding: 60px 24px 32px;
+    background-color: rgb(23, 57, 88);
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    
+}
+
+.footer_item{
+    margin-bottom: 30px;
+}
+
+.footer_content{
+    color: rgb(148, 163, 184);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer_container .logo-area{
+    margin-bottom: 20px;
+}
+
+.footer_container .citycare{
+    color: white;
+}
+
+.footer_container .emergency_button_main{
+    color: white;
+    background-color: rgb(153, 27, 27);
+    width: 240px;
+}
+
+.footer_item h4{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    
+}
+
+.footer_item a{
+    margin-bottom: 20px;
+    color: rgb(148, 163, 184);
+    display: block;
+    text-decoration: none;
+}
+
+
+
+.book_appointment{
+    background-color: rgb(240, 247, 255);
+    padding: 64px 24px;
+    text-align: center;
+    border-bottom: 1px solid rgb(226, 232, 240);
+}
+
+.book_appointment_div{
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.book_appointment_div p{
+    color: rgb(75, 85, 99);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.book_appointment_div h2{
+    color: rgb(26, 47, 107);
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.departments{
+    padding: 80px 24px;
+    background-color: white;;
+}
+
+.departments_grid{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.departments_items{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 15px;
+    background-color: rgb(248, 250, 252);
+}
+
+.departments_items p{
+    margin-bottom: 20px;
+    color: rgb(107, 114, 128);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.departments_items h3{
+    color:rgb(30, 58, 95);
+    margin-bottom: 10px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+li{
+    display: flex;
+    gap: 10px;
+    color: rgb(55, 65, 81);
+}
+
+.dept_button{
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;
+    background-color: rgb(30, 58, 95);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#paediatrics_logo{
+    background-image: url('images/Paediatrics.jpeg');
+    border-radius: 8px;
+}
+
+#general_logo{
+    background-image: url('images/general.jpeg');
+    border-radius: 8px;
+}
+
+#neurology_logo{
+    background-image: url('images/neurology.jpeg');
+    border-radius: 8px;
+}
+
+#cardiology_logo{
+    background-image: url('images/cardiology.jpeg');
+    border-radius: 8px;
+}
+
+#dentistry_logo{
+    background-image: url('images/dentistry.jpeg');
+    border-radius: 8px;
+}
+
+#orthopaedics_logo{
+    background-image: url('images/ortho.jpeg');
+    border-radius: 8px;
+}
+
+.tick{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-image: url('images/tick.jpeg');
+}
+
+.appointment_form{
+    padding: 64px 24px;
+
+}
+.appointment_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+.appointment_item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment_item h2{
+    color: rgb(30, 58, 95);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.appointment_item p{
+    color: rgb(75, 85, 99);
+    line-height: 1.75;
+    margin-bottom: 24px;
+}
+
+.appointment_item_left{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+#form{
+    padding: 36px;
+    background-color: rgb(248, 250, 252);
+    border-radius: 24px;
+    border: 2px solid rgb(226, 232, 240);
+}
+
+#form h3{
+    color:rgb(30, 58, 95);
+    margin-bottom: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    display: block;
+    color: rgb(55, 65, 81);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form_box{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgb(226, 232, 240);
+    background-color: white;
+    color: rgb(31, 41, 55);
+    border-radius: 8px;
+}
+
+.same_line_inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+form span{
+    color: rgb(119, 3, 3);
+}
+
+.emergency_box{
+    border-radius: 10px;
+    margin-bottom: 6px;
+    padding: 16px 18px;
+    background-color: rgb(254, 242, 242);
+    border: 1px solid rgb(254, 202, 202);
+}
+
+.item_left_emergency_head{
+    color: rgb(153, 27, 27);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.item_left_emergency_content{
+    color: rgb(185, 28, 28);
+    font-size: 14px;
+}
+
+.item_left_head{
+    font-size: 12px; 
+    font-weight: 600;
+    color: rgb(107, 114, 128);
+}
+
+.item_left_content{
+    color: rgb(31, 41, 55);
+    font-size: 15px;
+}
+
+.add_logo{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    border-radius: 12px;
+    background-image: url('images/map.jpeg');
+}
+
+.mail_logo{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    justify-self: center;
+    border-radius: 12px;
+    background-image: url('images/mail.jpeg');
 }
